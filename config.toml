@@ -1,4 +1,11 @@
-baseURL = 'http://hugo-quickstart-template.netlify.com'
+baseURL = 'https://musicmichaelc.com'
 languageCode = 'en-us'
-title = 'Netlify + Hugo Quickstart'
-theme = 'netlify-basic'
+theme = 'coming-soon'
+
+[params]
+  title = "Michael Christensen's music site"
+  description = "Stay tuned for more..."
+  favicon = ""
+  message = "Coming soon..." 
+  release = "Feb 13, 2024 12:00" 
+  background = ""
