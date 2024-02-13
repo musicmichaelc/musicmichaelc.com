@@ -1,11 +1,68 @@
+# Basic config:
 baseURL = 'https://musicmichaelc.com'
-languageCode = 'en-us'
-theme = 'coming-soon'
+theme = 'hugo-bearcub'
+copyright = "© 2024 Michael Christensen"
+defaultContentLanguage = "en"
+
+# Generate a nice robots.txt for SEO
+enableRobotsTXT = true
+
+# Multilingual setup:
+[languages]
+  [languages.en]
+    title = "Michael Christensen's music site"
+    languageName = "English"
+    LanguageCode = "en"
+    weight = 1
+  [languages.de]
+    title = "Musikwebsite von Michael Christensen"
+    languageName = "Deutsch"
+    LanguageCode = "de"
+    weight = 2
+  [languages.zh-Hant]
+    title = "Michael Christensen 的音樂網站"
+    languageName = "繁體中文"
+    LanguageCode = "zh-Hant"
+    weight = 3
+  [languages.zh-Hans]
+    title = "Michael Christensen 的音乐网站"
+    languageName = "简体中文"
+    LanguageCode = "zh-Hans"
+    weight = 4
+
 
 [params]
-  title = "Michael Christensen's music site"
-  description = "Stay tuned for more..."
+  description = "Composing, improvising & performing -- with piano, clarinet & computer"
   favicon = ""
-  message = "Coming soon..." 
-  release = "Feb 13, 2024 12:00" 
-  background = ""
+
+  # These images will show up when services want to generate a preview of a link
+  # to your site. Ignored if `generateSocialCard = true`. For more information
+  # about previews, see https://gohugo.io/templates/internal#twitter-cards and
+  # https://gohugo.io/templates/internal#open-graph
+  images = ["images/share.webp"]
+
+  # This title is used as the site_name on the Hugo's internal opengraph
+  # structured data template
+  title = "Michael Christensen's music site"
+
+  # Dates are displayed following the format below. For more information about
+  # formatting, see https://gohugo.io/functions/format/
+  dateFormat = "2006-01-02"
+
+  # If your blog is multilingual but you haven't translated a page, this theme
+  # will create a disabled link. By setting `hideUntranslated` to true, you can
+  # have the theme simply not show any link
+  hideUntranslated = false
+
+  # (EXPERIMENTAL) This theme is capable of dynamically generating social cards
+  # for posts that don't have `images` defined in their front matter; By setting
+  # `generateSocialCard` to false, you can prevent this behavior. For more
+  # information see layouts/partials/social_card.html
+  generateSocialCard = true
+
+  # Author metadata. This is mostly used for the RSS feed of your site, but the
+  # email is also added to the footer of each post
+  [params.author]
+    name = "Michael Christensen" # Your name as shown in the RSS feed metadata
+
+
