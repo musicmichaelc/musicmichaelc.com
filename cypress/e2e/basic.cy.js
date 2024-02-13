@@ -4,6 +4,6 @@ describe('empty spec', () => {
   })
   it('displays the resources text', () => {
     cy.get('h1')
-    .contains('Coming soon');
+    .contains('Michael Christensen');
   })
 })
